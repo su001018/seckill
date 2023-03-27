@@ -1,0 +1,2 @@
+INSERT INTO `t_goods`(`id`, `goods_name`, `goods_title`, `goods_img`, `goods_detail`, `goods_price`, `goods_stock`) VALUES (1, 'iPhone12', 'iPhone12', '/img/iPhone12.png', 'iPhone12', 6499.00, 100);
+INSERT INTO `t_goods`(`id`, `goods_name`, `goods_title`, `goods_img`, `goods_detail`, `goods_price`, `goods_stock`) VALUES (2, 'iPhone12Pro', 'iPhone12Pro', '/img/iPhone12Pro.png', 'iPhone12Pro', 9499.00, 100);

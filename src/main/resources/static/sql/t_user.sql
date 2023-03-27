@@ -1,0 +1,1 @@
+INSERT INTO `t_user`(`id`, `nickname`, `password`, `slat`, `head`, `register_date`, `last_login_date`, `login_count`) VALUES (15033876684, 'syk', '9dc60ab00ba58e0245398628e5fae279', 'F9B1187306841F6B93COB5DCEA8B163F', NULL, NULL, NULL, 0);

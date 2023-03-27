@@ -1,0 +1,47 @@
+spring:
+  mvc:
+
+  thymeleaf:
+    cache: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/seckill?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    hikari:
+      pool-name: DataHikariPool
+      #????????????
+      auto-commit: true
+      #????????
+      connection-test-query: SELECT 1
+  redis:
+    host: 192.168.153.128
+  rabbitmq:
+    host: 192.168.153.128
+    username: guest
+    password: guest
+    listener:
+      simple:
+        #最小消费者
+        concurrency: 10
+        max-concurrency: 10
+        prefetch: 1
+        auto-startup: true
+        default-requeue-rejected: true
+    template:
+      retry:
+        enabled: true
+        initial-interval: 1000ms
+        max-attempts: 3
+        max-interval: 10000ms
+        multiplier: 1
+    port: 5672
+mybatis-plus:
+  #xml????
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+  #??????
+  type-aliases-package: com.example.seckill.pojo
+
+logging:
+  level:
+    com.example.seckill.mapper: debug
